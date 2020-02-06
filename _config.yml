@@ -33,7 +33,7 @@ permalink: /:categories/:title/
 header: yes
 header_sm: images/banner-small.jpg
 header_med: images/banner-med.jpg
-header_large: images/banner-large.jpg
+header_large: F497A1FB-582D-4A3C-8A43-51372ACE38E7.png
 header_xl: images/banner-xl.jpg
 
 ## Thumbnailer taken from https://github.com/chrisanthropic/jekyll-minimagick
