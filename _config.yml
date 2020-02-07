@@ -7,7 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
   AuthoredInExile Comics
 
 
-baseurl: https://authoredinexile.github.io
+baseurl: ""
 url: / #Leave this, change the baseurl.
 
 # Exclude our ruby stuff
