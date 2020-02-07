@@ -1,19 +1,34 @@
 - name: "Darren"
-  pic: "images/bios/darren.png"
   bio: "Bastard farmboy. Son of a peasant woman, happily adopted by his step-father until they died. Talented hunter and horse archer."
+  pic:
+    url: "assets/images/twwb/bios/darren.png"
+    width: 164
+    height: 186
 
 - name: "Dragon"
-  pic: "images/bios/dragon.png"
   bio: "Not the smartest one out there."
+  pic:
+    url: "assets/images/twwb/bios/dragon.png"
+    width: 356
+    height: 108
 
 - name: "Shael"
-  pic: "images/bios/shael.png"
   bio: "Competent warrior, skilled leader, skilled with a lance and horse. Openly bisexual. Younger brother to Lachesis."
+  pic:
+    url: "assets/images/twwb/bios/shael.png"
+    width: 163
+    height: 209
 
 - name: "Osprey"
-  pic: "images/bios/osprey.png"
   bio: "Airborne messenger"
+  pic:
+    url: "assets/images/twwb/bios/osprey.png"
+    width: 133
+    height: 189
 
 - name: "Lachesis"
-  pic: "images/bios/lachesis.png"
   bio: "\"Sacrifice child\" born of a sacred union as decreed by Ajaxi tribal custom. She is granted magical powers and innate talent for war by a pact between the tribe and their patron deity. Favors the spear or glaive."
+  pic:
+    url: "assets/images/twwb/bios/lachesis.png"
+    width: 131
+    height: 165
