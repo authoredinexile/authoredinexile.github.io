@@ -5,6 +5,7 @@
   href: "/characters/"
 
 - title: "comics"
+  subcategories:
     - subtitle: "The Whole World Blind"  
       subhref: "/Comics/TheWholeWorldBlind/"
 
