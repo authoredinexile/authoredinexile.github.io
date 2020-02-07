@@ -8,3 +8,4 @@ Gemfile.lock
 .jekyll-cache/*
 *.swp
 *.bak
+*.swo
