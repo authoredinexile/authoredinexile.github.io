@@ -4,10 +4,8 @@
 - title: "characters"
   href: "/characters/"
 
-- title: "comics"
-  subcategories:
-    - subtitle: "The Whole World Blind"  
-      subhref: "/Comics/TheWholeWorldBlind/"
+#- title: "archives"
+#  href: "/a-fistful-of-lunars/"
 
 - title: "about"
   href: "/about/"
@@ -37,12 +35,12 @@
     - subtitle: "deployment"
       subhref: "/documentation/deploy.html"
       
-- title: "external"
-  external: "https://www.gumroad.com/shamsee"
+#- title: "external"
+#  external: "https://www.gumroad.com/shamsee"
   
-- title: "store"
-  external-subcategories:
-    - subtitle: "Gumroad"
-      subhref: "https://www.gumroad.com/shamsee"
-    - subtitle: "Amazon"
-      subhref: "http://www.amazon.com/dp/B00NTC5CWM/?tag=bathelup-20"
+#- title: "store"
+#  external-subcategories:
+#    - subtitle: "Gumroad"
+#      subhref: "https://www.gumroad.com/shamsee"
+#    - subtitle: "Amazon"
+#      subhref: "http://www.amazon.com/dp/B00NTC5CWM/?tag=bathelup-20"
