@@ -4,20 +4,18 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-  <link rel="shortcut icon"                    href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/favicon.ico }}"           type="image/png" />
-  <link rel="apple-touch-icon" sizes="114x144" href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-114x114.png"     type="image/png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-120x120.png"     type="image/png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-144x144.png"     type="image/png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-152x152.png"     type="image/png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-180x180.png"     type="image/png" />
-  <link rel="apple-touch-icon" sizes="57x57"   href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-57x57.png"       type="image/png" />
-  <link rel="apple-touch-icon" sizes="60x60"   href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-60x60.png"       type="image/png" />
-  <link rel="apple-touch-icon" sizes="72x72"   href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-72x72.png"       type="image/png" />
-  <link rel="apple-touch-icon" sizes="76x76"   href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-76x76.png"       type="image/png" />
-  <link rel="apple-touch-icon"                 href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-precomposed.png" type="image/png" />
-  <link rel="apple-touch-icon"                 href="{{ site.url }}{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon.png"             type="image/png" />
-
-
+  <link rel="shortcut icon"                    href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/favicon.ico"               type="image/png" />
+  <link rel="apple-touch-icon" sizes="114x144" href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-114x114.png"     type="image/png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-120x120.png"     type="image/png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-144x144.png"     type="image/png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-152x152.png"     type="image/png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-180x180.png"     type="image/png" />
+  <link rel="apple-touch-icon" sizes="57x57"   href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-57x57.png"       type="image/png" />
+  <link rel="apple-touch-icon" sizes="60x60"   href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-60x60.png"       type="image/png" />
+  <link rel="apple-touch-icon" sizes="72x72"   href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-72x72.png"       type="image/png" />
+  <link rel="apple-touch-icon" sizes="76x76"   href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-76x76.png"       type="image/png" />
+  <link rel="apple-touch-icon"                 href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon-precomposed.png" type="image/png" />
+  <link rel="apple-touch-icon"                 href="{{ site.url }}/{{ site.baseurl }}/{{ site.favicon_directory }}/apple-icon.png"             type="image/png" />
 
   <meta name="apple-mobile-web-app-title" content="{{ site.apple_web_app_title }}">
 
@@ -29,8 +27,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:url" content="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove: '/' }}" />
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" />
+  <meta property="og:url" content="{{ site.url }}/{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove: '/' }}" />
+  <meta property="og:image" content="{{ site.url }}/{{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" />
   <meta property="article:publisher" content="https://www.facebook.com/{{ site.facebook }}" />
   {% if excerpt %}
     <meta property="article:author" content="https://www.facebook.com/{{ site.facebook }}" />
@@ -42,8 +40,8 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta name="twitter:description" content="{% if excerpt %}{{ excerpt }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}" />
-  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" />
+  <meta name="twitter:url" content="{{ site.url }}/{{ site.baseurl }}" />
+  <meta name="twitter:image" content="{{ site.url }}/{{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% else %}{{ site.cover }}{% endif %}" />
   <meta name="twitter:label1" content="Written by" />
   <meta name="twitter:data1" content="{{ site.title }}" />
   {% if page.tags.size > 0 %}
@@ -60,7 +58,7 @@
     <meta property="og:image:height" content="666" />
   {% endif %}
 
-  <link rel="canonical" href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove: '/' }}" />
+  <link rel="canonical" href="{{ site.url }}/{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove: '/' }}" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
   <script type="application/ld+json">
