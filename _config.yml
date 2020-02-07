@@ -28,7 +28,7 @@ about: about
 contact: 
 privacy-policy: 
 
-permalink: /:title
+#permalink: /:title
 
 
 # Google Analytics
@@ -66,3 +66,5 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+  - "*.swo"
+  - "*.swp"

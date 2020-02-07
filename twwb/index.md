@@ -3,6 +3,8 @@ layout: post
 title: The Whole World Blind
 categories: "The-Whole-World-Blind"
 cover: "assets/images/twwb/twwb_map.jpeg"
+paginator:
+  enable: true
 ---
 
 [CharactersLink]:{{ page.url }}/characters
@@ -20,6 +22,12 @@ These are the [Characters][CharactersLink].
 
 ## POSTS
 
-{% for category in site.categories %}
-  {{ category | debug }}
+<ul>
+{% for post in paginator.posts %}
+  BINGBONG
+  {% for post in category %}
+    <li>{{ post.title }} - <span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {%endfor%}
 {% endfor %}
+</ul>
+
