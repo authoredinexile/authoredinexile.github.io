@@ -1,16 +1,13 @@
 # Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+title: Authored-In-Exile
+description: Blog for comics
 cover: assets/images/radhakrishna.jpg
 logo: assets/images/logo.png
 favicon: assets/images/favicon.png
-baseurl:
-#"/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
-url:
-#"https://samanyougarg.com" # the base hostname & protocol for your site
+baseurl: 
+url: https://authoredinexile.github.io
 
 pagination:
-
   # Site-wide kill switch, disabled here it doesn't run at all 
   enabled: true
 
@@ -20,15 +17,15 @@ pagination:
   per_page: 5
 
 # Social
-facebook: facebook
-twitter: twitter
-github:  github
+facebook: 
+twitter: 
+github: authoredinexile
+tumblr: authoredinexile
 
 #Additional Pages
 about: about
-contact: contact
-privacy-policy: privacy-policy
-
+contact: 
+privacy-policy: 
 
 permalink: /:title
 
@@ -49,13 +46,15 @@ plugins:
 # Settings for rake task
 safe: False
 lsi: False
-username: samanyougarg #github username
-repo: hanuman #github repository
+username: authoredinexile #github username
+repo: authoredinexile.github.io #github repository
 branch: master #branch
-relative_source: ../hanuman/ #source directory
-destination: ../hanuman-pages/ #destination directory
-production_url:  https://samanyougarg.com/
-source_url:  https://github.com/samanyougarg/hanuman #source repository url
+#relative_source: #source directory
+#destination: #destination directory
+production_url:  https://authoredinexile.github.io
+source_url: https://github.com/authoredinexile/authoredinexile.github.io #source repository url
+
+include_copyright: true
 
 exclude:
   - README.md
