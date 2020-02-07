@@ -1,11 +1,12 @@
 # Site settings
 title: Authored-In-Exile
 description: Blog for comics
-cover: assets/images/main_banner.png
-logo: assets/images/logo.png
-favicon: assets/images/favicon.png
 baseurl: 
 url: https://authoredinexile.github.io
+
+favicon_directory: assets/images/favicon
+cover: assets/images/main_banner.png
+logo: assets/images/logo.png
 
 pagination:
   # Site-wide kill switch, disabled here it doesn't run at all 
