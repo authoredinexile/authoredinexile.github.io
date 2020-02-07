@@ -7,7 +7,7 @@
 - title: "comics"
   subcategories:
     - subtitle: "The Whole World Blind"  
-      subhref: "/TheWholeWorldBlind/index.html"
+      subhref: "/TheWholeWorldBlind/"
 
 - title: "about"
   href: "/about/"
