@@ -6,3 +6,5 @@ vendor/ruby
 Gemfile.lock
 .DS_Store
 .jekyll-cache/*
+*.swp
+*.bak

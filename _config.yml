@@ -1,71 +1,68 @@
 # Site settings
-title: AuthoredinExileComics
-email: 
+title: Hanuman
+description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+cover: assets/images/radhakrishna.jpg
+logo: assets/images/logo.png
+favicon: assets/images/favicon.png
+baseurl:
+#"/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
+url:
+#"https://samanyougarg.com" # the base hostname & protocol for your site
 
-keywords: webcomic, comic
-description: > # this means to ignore newlines until "baseurl:"
-  AuthoredInExile Comics
+pagination:
+
+  # Site-wide kill switch, disabled here it doesn't run at all 
+  enabled: true
+
+  # Set to 'true' to enable pagination debugging. This can be enabled in the site config or only for individual pagination pages
+  debug: false
+
+  per_page: 5
+
+# Social
+facebook: facebook
+twitter: twitter
+github:  github
+
+#Additional Pages
+about: about
+contact: contact
+privacy-policy: privacy-policy
 
 
-baseurl: ""
-url: / #Leave this, change the baseurl.
+permalink: /:title
 
-# Exclude our ruby stuff
-exclude: [.bundle, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, image_optim_cache.yml]
+
+# Google Analytics
+analytics_id: ""
 
 # Build settings
 markdown: kramdown
+
 kramdown:
-  input: GFM
+  parse_block_html: true
 
-destination: _site
+plugins:
+  - jekyll-paginate-v2
 
-# Compress our Css
-#sass:
-#    style: :compressed
 
-permalink: /:categories/:title/
+# Settings for rake task
+safe: False
+lsi: False
+username: samanyougarg #github username
+repo: hanuman #github repository
+branch: master #branch
+relative_source: ../hanuman/ #source directory
+destination: ../hanuman-pages/ #destination directory
+production_url:  https://samanyougarg.com/
+source_url:  https://github.com/samanyougarg/hanuman #source repository url
 
-#################################################
-####CUSTOM
-
-# Set default header image
-header: yes
-header_sm: images/banner-small.jpg
-header_med: images/banner-med.jpg
-header_large: F497A1FB-582D-4A3C-8A43-51372ACE38E7.png
-header_xl: F497A1FB-582D-4A3C-8A43-51372ACE38E7.png
-
-## Thumbnailer taken from https://github.com/chrisanthropic/jekyll-minimagick
-
-# Autogenerate thumbs for comics
-mini_magick:
-
-#Create Thumbs for the Archive Page
-thumbnail:
-  source: images/comics/
-  destination: /images/comics/thumbs
-  resize: "182x280^"
-
-#Autogenerate smaller size for small screens       
-small:
-  source: images/comics/
-  destination: /images/comics/small
-  resize: "350x535^"
-
-#### SEO Stuff
-# Google Analytics
-google_universal_analytics: 
-google_universal_analytics_cookiedomain: auto
-
-# Facebook Opengraph
-facebook_user:
-facebook_app_id:                      #enter your App ID
-facebook_locale: en_US
-facebook_page:                        #the URL of your Facebook Page
-facebook_image: /images/SHAM-logo.jpg #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
-
-# Twitter Cards
-twitter_user: 
-twitter_card: true
-twitter_image: /images/SHAM-logo.jpg  #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
