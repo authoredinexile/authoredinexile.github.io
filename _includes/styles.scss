@@ -34,6 +34,52 @@ $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
   }
 }
 
+@mixin fade($color1,$color2) {
+    background: -webkit-linear-gradient(
+        rgba($color1, 0) 0%,
+        rgba($color2, 1) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        rgba($color1, 0) 0%,
+        rgba($color2, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba($color1, 0) 0%,
+        rgba($color2, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba($color1, 0) 0%,
+        rgba($color2, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba($color1, 0) 0%,
+        rgba($color2, 1) 100%
+    );
+}
+
+@mixin radial_fade($color1,$color2,$alpha) {
+    background: -webkit-radial-gradient(
+        rgba($color1, $alpha)   0%,
+        rgba($color2, 0     ) 110%
+    ); 
+    background-image: -moz-radial-gradient(
+        rgba($color1, $alpha)   0%,
+        rgba($color2, 0     ) 110%
+    );
+    background-image: -o-radial-gradient(
+        rgba($color1, $alpha)   0%,
+        rgba($color2, 0     ) 110%
+    );
+    background-image: radial-gradient(
+        rgba($color1, $alpha)   0%,
+        rgba($color2, 0     ) 110%
+    );
+    background-image: -ms-radial-gradient(
+        rgba($color1, $alpha)   0%,
+        rgba($color2, 0     ) 110%
+    );
+}
+
 // Only needed for syntax highlighting
 %vertical-rhythm {
   margin-bottom: $rs;
@@ -1779,6 +1825,13 @@ a,a:active,a:visited {
   background:$theme-color;
   padding:0 1rem .2rem
 }
+.ampstart-fullpage-hero-heading-text.description {
+  @if($light-theme) {
+    @include radial_fade(rgb(40,40,40),rgb(40,40,40), .8);
+  } @else {
+    @include radial_fade(rgb(160,160,160),rgb(160,160,160), .85);
+  }
+}
 .ampstart-image-fullpage-hero>amp-img {
   max-height:calc(100vh - 3.5rem)
 }
@@ -1788,14 +1841,12 @@ a,a:active,a:visited {
 }
 .ampstart-fullpage-hero-heading {
   font-size: 3rem;
-   line-height:1.5rem;
-  }
+  line-height:1.5rem;
+}
 .ampstart-fullpage-hero-cta {
   background:transparent
 }
 .ampstart-readmore {
-  background:-webkit-linear-gradient(bottom,rgba(0,0,0,.65),transparent);
-  background:linear-gradient(0deg,rgba(0,0,0,.65) 0,transparent);
   color:#fff;
   margin-top:5rem;
   padding-bottom:3.5rem
@@ -2354,8 +2405,14 @@ blockquote {
 }
 
 .title {
-    background: none;
+  //background: none;
+  @if($light-theme) {
+    @include radial_fade(rgb(40,40,40),rgb(40,40,40), .8);
+  } @else {
+    @include radial_fade(rgb(160,160,160),rgb(160,160,160), .85);
+  }
 }
+
 
 body > figure > figcaption > header > h2 {
     text-align: center;
