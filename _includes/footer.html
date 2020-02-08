@@ -41,29 +41,31 @@
       {% endif %}
 
   </ul>
-  <nav class="ampstart-footer-nav">
-    <ul class="list-reset flex flex-wrap mb3">
-      {% if site.about %}
-        <li class="px1">
-          <a class="text-decoration-none ampstart-label" href="{{site.url}}/{{site.baseurl}}/{{site.about}}">About</a>
-        </li>
-      {% endif %}
-      {% if site.contact %}
-        <li class="px1">
-          <a class="text-decoration-none ampstart-label" href="{{site.url}}/{{site.baseurl}}/{{site.contact}}">Contact</a>
-        </li>
-      {% endif %}
-      {% if site.privacy-policy %}
-        <li class="px1">
-          <a class="text-decoration-none ampstart-label" href="{{site.url}}/{{site.baseurl}}/{{site.privacy-policy}}">Privacy Policy</a>
-        </li>
-      {% endif %}
-    </ul>
-  </nav>
-  {% if site.include_copyright %}
-    <small>
-        &copy; <script>document.write( new Date().getFullYear() );</script>
-    <a href="{{site.baseurl}}">{{site.name}}</a> &nbsp; | &nbsp;  All Rights Reserved.
-    </small>
+  {% if site.footer_nav %}
+    <nav class="ampstart-footer-nav">
+      <ul class="list-reset flex flex-wrap mb3">
+        {% if site.footer_nav.about %}
+          <li class="px1">
+            <a class="text-decoration-none ampstart-label" href="{{site.url}}/{{site.baseurl}}/{{site.footer_nav.about}}">About</a>
+          </li>
+        {% endif %}
+        {% if site.footer_nav.contact %}
+          <li class="px1">
+            <a class="text-decoration-none ampstart-label" href="{{site.url}}/{{site.baseurl}}/{{site.footer_nav.contact}}">Contact</a>
+          </li>
+        {% endif %}
+        {% if site.footer_nav.privacy_policy %}
+          <li class="px1">
+            <a class="text-decoration-none ampstart-label" href="{{site.url}}/{{site.baseurl}}/{{site.footer_nav.privacy_policy}}">Privacy Policy</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+    {% if site.footer_nav.copyright %}
+      <small>
+          &copy; <script>document.write( new Date().getFullYear() );</script>
+      <a href="{{site.baseurl}}">{{site.name}}</a> &nbsp; | &nbsp;  All Rights Reserved.
+      </small>
+    {% endif %}
   {% endif %}
 </footer>
