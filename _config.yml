@@ -69,6 +69,17 @@ footer_nav:
   privacy-policy: 
   copyright: true
 
+left_nav:
+  home:
+    title: Home
+    url:
+  about:
+    title: About
+    url: about
+  twwb:
+    title: The-Whole-World-Blind
+    url: twwb
+
 share_social:
   twitter: true
   email: true
@@ -82,13 +93,3 @@ collections:
     output: false
 
 #################################
-left_nav:
-  home:
-    title: Home
-    url:
-  about:
-    title: About
-    url: about
-  twwb:
-    title: The-Whole-World-Blind
-    url: twwb
