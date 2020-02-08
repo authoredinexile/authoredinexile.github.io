@@ -1,0 +1,12 @@
+{% if include.characters %}
+  {% for char in include.characters %}
+  <figure class="ampstart-image-with-heading m0 relative mb4">
+    <amp-img width="{{ char.pic.width }}" height="{{ char.pic.height }}" layout="responsive" src="{{ site.url }}/{{ site.baseurl }}/{{ char.pic.url }}" alt="Character {{char.name}}" class="mb3"></amp-img>
+    <figcaption class="absolute right-0 bottom-0 left-0">
+      <header class="ampstart-image-heading px2 py2 line-height-4"><h1>{{ char.name }}</h1></header>
+    </figcaption>
+  </figure>
+  <p class="h5 mt1 px3">{{char.bio}}</p>
+  <br/>
+  {% endfor %}
+{%endif%}

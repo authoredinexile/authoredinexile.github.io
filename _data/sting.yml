@@ -1,31 +1,35 @@
+title: "The Whole World Blind"
+description: "Everyone is blind."
+description_long: "Everyone is blind
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac augue libero. Fusce ac tempor dolor. Ut est dui, gravida a consequat aliquet, fermentum sodales risus. Suspendisse eu arcu id mi ornare facilisis non id nisl. Maecenas nec congue arcu, non semper neque. Proin mollis nisl diam, eu ultrices diam facilisis et. Integer fringilla lorem quis semper venenatis.
+
+Etiam sapien dolor, mattis vel feugiat nec, egestas eget risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam massa a est porta vehicula. Cras eu gravida massa. Integer non sem ac mi ultrices posuere a pretium tortor. Mauris vitae varius sem. Praesent faucibus nec felis et dictum. Vestibulum lorem velit, laoreet nec vestibulum in, varius nec enim."
+characters:
 - name: "Darren"
   bio: "Bastard farmboy. Son of a peasant woman, happily adopted by his step-father until they died. Talented hunter and horse archer."
   pic:
     url: "assets/images/twwb/bios/darren.png"
     width: 164
     height: 186
-
 - name: "Dragon"
   bio: "Not the smartest one out there."
   pic:
     url: "assets/images/twwb/bios/dragon.png"
     width: 356
     height: 108
-
 - name: "Shael"
   bio: "Competent warrior, skilled leader, skilled with a lance and horse. Openly bisexual. Younger brother to Lachesis."
   pic:
     url: "assets/images/twwb/bios/shael.png"
     width: 163
     height: 209
-
 - name: "Osprey"
   bio: "Airborne messenger"
   pic:
     url: "assets/images/twwb/bios/osprey.png"
     width: 133
     height: 189
-
 - name: "Lachesis"
   bio: "\"Sacrifice child\" born of a sacred union as decreed by Ajaxi tribal custom. She is granted magical powers and innate talent for war by a pact between the tribe and their patron deity. Favors the spear or glaive."
   pic:
