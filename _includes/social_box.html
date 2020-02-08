@@ -1,0 +1,19 @@
+<!-- Start Socialbox -->
+{% if site.share_social %}
+<div class="ampstart-social-box mb4">
+  {% if site.share_social.twitter %}
+    <amp-social-share type="twitter" aria-label="Share this on Twitter"></amp-social-share>
+  {%endif%}
+  {% if site.share_social.facebook %}
+    <amp-social-share type="facebook" aria-label="Share this on Facebook" data-param-app_id="145393166088568"></amp-social-share>
+  {%endif%}
+  {% if site.share_social.gplus %}
+    <amp-social-share type="gplus" aria-label="Share this on Google Plus"></amp-social-share>
+  {%endif%}
+  {% if site.share_social.email %}
+    <amp-social-share type="email" aria-label="Share this with E-mail"></amp-social-share>
+  {%endif%}
+</div>
+{% endif %}
+<!-- End Socialbox -->
+

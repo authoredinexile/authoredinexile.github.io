@@ -1,0 +1,48 @@
+{% if page.show_related %}
+  <!-- Start Related article -->
+  {% if page.tags.size > 0 %}
+    {% assign primary = page.tags | first %}
+    {% assign related_posts = 0 %}
+    {% for post in site.posts %}
+      {% if post.tags.size > 0 %}
+        {% if post.tags contains primary %}
+          {% assign related_posts = related_posts | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if related_posts > 1 %}
+      <section class="ampstart-related-article-section p3 mb4 border-top">
+        <h2 class="ampstart-heading ampstart-label m0 mb3">Related article</h2>
+        <article class="ampstart-related-article">
+          {% if post.cover %}
+            <amp-img src="{{ site.url }}/{{ site.baseurl }}/{{ post.cover }}" width="656" height="350" layout="responsive" alt="" class="mb3"></amp-img>
+          {% else %}
+            {% if site.cover %}
+              <amp-img src="{{ site.url}}/{{ site.baseurl }}/{{ site.cover }}" width="656" height="350" layout="responsive" alt="" class="mb3"></amp-img>
+            {% endif %}
+          {% endif %}
+          {% assign count = 0 %}
+          {% for post in site.posts %}
+            {% if post.tags contains primary %}
+              {% if post.title != page.title %}
+                {% assign count = count | plus: 1 %}
+                {% if count <= 3 %}
+                  <h3 class="ampstart-heading h4 m0 mb3"><b>{{ post.title }}</b></h3>
+                  <p class="line-height-4 mb3">
+                  {% if post.description %}
+                    {{post.description}}
+                  {% else %}
+                    {{ post.content | strip_html | truncatewords:15 }}
+                  {% endif %}
+                  </p>
+                  <a href="{{site.url}}//{{site.baseurl}}{{post.url}}" class="ampstart-rekated-article-readmore block text-decoration-none ampstart-label">Read more</a>
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </article>
+      </section>
+    {% endif %}
+  {% endif %}
+  <!-- End Related article -->
+{%endif%}
