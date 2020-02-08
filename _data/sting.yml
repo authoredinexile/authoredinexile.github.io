@@ -44,3 +44,330 @@ characters:
     url: "assets/images/sting/bios/assassination_squad.png"
     width:  768
     height: 768
+comic_pages:
+  #Comics separated by chapter
+  asset_folder: "assets/images/sting"
+  - title: "Chapter 0"
+    description: Introduction
+    folder: "Chapter_0"
+    pages:
+    - rant:
+      pic:
+        url: "0.png"
+        width:  2362
+        height: 3248
+    - rant:
+      pic:
+        url: "1.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "2.png"
+        width:  2362 
+        height: 3248
+  - title: "Chapter 1"
+    description:
+    folder: "Chapter_1"
+    pages:
+    - rant:
+      pic:
+        url: "0.png"
+        width:  2362
+        height: 3248
+    - rant:
+      pic:
+        url: "1.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "2.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "3.png"
+        width:  2362
+        height: 2948
+    - rant:
+      pic:
+        url: "4.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "5.png"
+        width:  2362 
+        height: 3038
+    - rant:
+      pic:
+        url: "6.png"
+        width:  2362
+        height: 3028
+    - rant:
+      pic:
+        url: "7.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "8.png"
+        width:  2362 
+        height: 3037
+    - rant:
+      pic:
+        url: "9.png"
+        width:  2362
+        height: 3248
+    - rant:
+      pic:
+        url: "10.png"
+        width:  2362 
+        height: 3045
+    - rant:
+      pic:
+        url: "11.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "12.png"
+        width:  2362 
+        height: 3087
+  - title: "Chapter 2"
+    description:
+    folder: "Chapter_2"
+    pages:
+    - rant:
+      pic:
+        url: "0.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "1.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "2.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "3.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "4.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "5.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "6.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "7.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "8.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "9.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "10.png"
+        width:  2362 
+        height: 3248
+  - title: "Chapter 3"
+    description:
+    folder: "Chapter_3"
+    pages:
+    - rant:
+      pic:
+        url: "0.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "1.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "2.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "3.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "4.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "5.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "6.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "7.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "8.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "9.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "10.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "11.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "12.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "13.png"
+        width:  2362 
+        height: 3248
+  - title: "Chapter 4"
+    description:
+    folder: "Chapter_4"
+    pages:
+    - rant:
+      pic:
+        url: "0.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "1.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "2.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "3.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "4.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "5.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "6.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "7.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "8.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "9.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "10.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "11.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "12.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "13.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "14.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "15.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "16.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "17.png"
+        width:  2362 
+        height: 3248
+    - rant:
+      pic:
+        url: "18.png"
+        width:  2362 
+        height: 3248
+
+
+
+
