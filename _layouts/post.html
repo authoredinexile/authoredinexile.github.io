@@ -32,11 +32,12 @@ layout: default
         <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
 
         {% if page.tags.size > 0 %}
+          <p> {{ page.tags | debug }} </p>
           {% for tag in page.tags %}
-            {% if forloop.index == page.tags.size %}
-              <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>
-            {% else %}
-              <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
+            SCOOP
+            <a href='{{site.url}}/{{site.baseurl}}/tags/#{{tag}}'>{{ tag | capitalize }}</a>
+            {% if forloop.index != page.tags.size %}
+             <p>asdfasdfasd,</p>
             {% endif %}
           {% endfor %}
         {% endif %}
@@ -62,9 +63,9 @@ layout: default
           <span class="ampstart-subtitle block px3 pt2 mb2">
             {% for tag in page.tags %}
               {% if forloop.index == page.tags.size %}
-               <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>
+               <a href='{{site.url}}/{{site.baseurl}}/tags/#{{tag}}'>{{ tag | capitalize }}</a>
               {% else %}
-               <a href='{{site.baseurl}}tags/#{{tag}}'>{{ tag | capitalize }}</a>,
+               <a href='{{site.url}}/{{site.baseurl}}/tags/#{{tag}}'>{{ tag | capitalize }}</a>,
               {% endif %}
             {% endfor %}
           </span>
