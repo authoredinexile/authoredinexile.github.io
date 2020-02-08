@@ -57,6 +57,12 @@ source_url: https://github.com/authoredinexile/authoredinexile.github.io #source
 
 include_copyright: true
 
+share_social:
+  twitter: true
+  email: true
+  facebook: 
+  gplus: 
+
 exclude:
   - README.md
   - Rakefile
