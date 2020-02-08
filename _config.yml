@@ -75,11 +75,20 @@ share_social:
   facebook: 
   gplus: 
 
-
 collections:
   twwb:
-    people: true
+    output: true
   sting:
-    people: true
+    output: false
 
 #################################
+left_nav:
+  home:
+    title: Home
+    url:
+  about:
+    title: About
+    url: about
+  twwb:
+    title: The-Whole-World-Blind
+    url: twwb
