@@ -1,7 +1,7 @@
-{% if page.tags.size > 0 %}
-  <p> {{ page.tags | debug }} </p>
-  {% for tag in page.tags %}
+{% if include.tags.size > 0 %}
+  <p> {{ include.tags | debug }} </p>
+  {% for tag in include.tags %}
     <a href='{{site.url}}/{{site.baseurl}}/tags/#{{tag}}'>{{ tag | capitalize }}</a>
-    {% if forloop.index != page.tags.size %} , {% endif %}
+    {% if forloop.index != include.tags.size %} , {% endif %}
   {% endfor %}
 {% endif %}

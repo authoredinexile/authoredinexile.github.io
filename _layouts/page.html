@@ -1,18 +1,35 @@
 ---
 layout: default
 ---
+{% if page.cover %}
+  {% include cover_figure.html cover=page.cover title=page.title author=page.author %}
+{%endif%}
 <main class="content" role="main">
-  <article class="post">
+  {% if page.cover %}
+    <article class="photo-article">
+  {%else%}
+    <article class="post">
+  {%endif%}
     <div class="post-meta">
     </div>
-    {% unless page.hide_title %}
+    {% if page.hide_title or page.cover %}
+    {% else %}
       <h1 class="mb1 px3"><b>{{ page.title }}</b></h1>
-    {%endunless%}
+    {%endif%}
     <section class="post-content">
       <a name="topofpage"></a>
       {{content}}
     </section>
   </article>
-</main>
+  {%if page.author or site.share_social %}
+    <hr/>
+  {%endif%}
+  {%if page.author %}
+    {% include author_credit.html author=page.author %}
+  {%endif%}
 
-{% include footer.html %}
+  {% if site.share_social %}
+    {% include social_box.html %}
+  {%endif%}
+  {% include footer.html %}
+</main>

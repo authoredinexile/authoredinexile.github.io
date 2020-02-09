@@ -1,6 +1,6 @@
-{% if page.show_related %}
+{% if include.show_related %}
   <!-- Start Related article -->
-  {% if page.tags.size > 0 %}
+  {% if include.tags.size > 0 %}
     {% assign primary = page.tags | first %}
     {% assign related_posts = 0 %}
     {% for post in site.posts %}
@@ -24,7 +24,7 @@
           {% assign count = 0 %}
           {% for post in site.posts %}
             {% if post.tags contains primary %}
-              {% if post.title != page.title %}
+              {% if post.title != include.title %}
                 {% assign count = count | plus: 1 %}
                 {% if count <= 3 %}
                   <h3 class="ampstart-heading h4 m0 mb3"><b>{{ post.title }}</b></h3>

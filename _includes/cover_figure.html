@@ -1,0 +1,27 @@
+<!-- places a figure with the cover image at the top of the page, with the optional title and or author -->
+<figure class="ampstart-image-fullpage-hero m0 relative mb4">
+  <amp-img width="404" height="720" alt="{{ include.title }}" layout="responsive" src="{{ site.url }}/{{ site.baseurl }}/{{ include.cover }}" media="(max-width: 415px)"></amp-img>
+  <amp-img height="720" alt="{{ include.title }}" layout="fixed-height" src="{{ site.url }}/{{ site.baseurl }}/{{ include.cover }}" media="(min-width: 416px)"></amp-img>
+  <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+    <header class="p3">
+      <h1 class="ampstart-fullpage-hero-heading mb0 hanuman">
+        {%if include.title %}
+          <span class="ampstart-fullpage-hero-heading-text title">
+            {{ include.title }}
+          </span>
+        {%endif%}
+      </h1>
+      <h2 class="ampstart-fullpage-hero-heading mb0">
+        {%if include.author%}
+        <span class="ampstart-fullpage-hero-heading-text description">
+          By <b><a href="#" role="author" class="text-decoration-none author">{{include.author}}</a></b>
+        </span>
+        {%endif%}
+      </h2>
+    </header>
+    <footer class="absolute left-0 right-0 bottom-0">
+      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
+    </footer>
+  </figcaption>
+</figure>
+

@@ -2,76 +2,49 @@
 layout: default
 ---
 {% if page.cover %}
-  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-    <amp-img width="404" height="720" alt="{{ page.title }}" layout="responsive" src="{{ site.url }}/{{ site.baseurl }}/{{ page.cover }}" media="(max-width: 415px)"></amp-img>
-    <amp-img height="720" alt="{{ page.title }}" layout="fixed-height" src="{{ site.url }}/{{ site.baseurl }}/{{ page.cover }}" media="(min-width: 416px)"></amp-img>
-    <figcaption class="absolute top-0 right-0 bottom-0 left-0">
-      <header class="p3">
-        <h1 class="ampstart-fullpage-hero-heading mb0 hanuman">
-          <span class="ampstart-fullpage-hero-heading-text title">
-            {{ page.title }}
-          </span>
-        </h1>
-        <h2 class="ampstart-fullpage-hero-heading mb0">
-          {% if page.author %}
-          <span class="ampstart-fullpage-hero-heading-text description">
-            By <b><a href="#" role="author" class="text-decoration-none author">{{page.author}}</a></b>
-          </span>
-          {% endif %}
-        </h2>
-      </header>
-      <footer class="absolute left-0 right-0 bottom-0">
-        <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
-      </footer>
-    </figcaption>
-  </figure>
+  {% include cover_figure.html cover=page.cover title=page.title author=page.author %}
+{%endif%}
 
-  <main id="content" role="main" class="">
-    <article class="photo-article">
-      <div class="post-meta mb4 px3">
-        <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
-        {% if page.tags.size > 0 %}
-          {% include page_tags.html %}
-        {% endif %}
-
-      </div>
+<main id="content" role="main" class="">
+  {%if page.cover %}
+  <article class="photo-article">
+    <div class="post-meta mb4 px3">
+      <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
+      {% if page.tags.size > 0 %}
+        {% include page_tags.html tags=page.tags %}
+      {% endif %}
+    </div>
 
   {% else %}
+  <article class="recipe-article">
+    <header>
+      <span class="ampstart-subtitle block px3 pt2 mb2">
+        {% if page.tags.size > 0 %}
+          {% include page_tags.html tags=page.tags %}
+        {% endif %}
+      </span>
+      <h1 class="mb1 px3">{{page.title}}</h1>
 
-    <main id="content" role="main" class="">
-      <article class="recipe-article">
-        <header>
-          <span class="ampstart-subtitle block px3 pt2 mb2">
-            {% if page.tags.size > 0 %}
-              {% include page_tags.html %}
-            {% endif %}
-          </span>
-          <h1 class="mb1 px3">{{page.title}}</h1>
-
-          <address class="ampstart-byline clearfix mb4 px3 h5">
-            <time class="ampstart-byline-pubdate block bold my1" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
-          </address>
-        </header>
-
+      <address class="ampstart-byline clearfix mb4 px3 h5">
+        <time class="ampstart-byline-pubdate block bold my1" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
+      </address>
+    </header>
   {% endif %}
-
     <div class="px3 mb4">
       {{content}}
     </div>
-
     {% if page.show_related %}
-      {% include related_articles.html %}
+      {% include related_articles.html show_related=page.show_related title=page.title %}
     {%endif%}
-<hr>
-
-{%if page.author %}
-  {% include author_credit.html %}
-{%endif%}
-
-{% if site.share_social %}
-  {% include social_box.html %}
-{%endif%}
-
-{% include footer.html %}
-
+  </article>
+  {%if page.author or site.share_social %}
+    <hr/>
+  {%endif%}
+  {%if page.author %}
+    {% include author_credit.html author=page.author %}
+  {%endif%}
+  {% if site.share_social %}
+    {% include social_box.html %}
+  {%endif%}
+  {% include footer.html %}
 </main>
