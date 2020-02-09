@@ -4,49 +4,50 @@ description_long: "Humans are not alone. Humans exist with evil spirits, demons,
 In this story, a young boy is pulled into the world of Guardians and Harvesters by the enigmatic <q>Prince of Assassins</q>. Mysteries unfold as the boy learns of this new world that threatens to swallow him whole."
 characters:
 - name: "Max Booth"
-  bio: "BIO TEXT"
+  bio: "Human child caught up in the war between the Guardians and Harvesters. For some unknown reason he is particularly appetizing to the Harvesters. Darren rescues him forthright, but things are not quite what the seem with Max."
   pic:
     url: "assets/images/sting/bios/max_booth.png"
     width:  850
     height: 850
-- name: "Darren, the <q>Prince of Assassins</q>"
-  bio: "BIO TEXT"
+- name: "Darren"
+  bio: "Vanguard of the Guardians. Darren is usually on the front line of the defense of humans. He's usually unreluctant to show his true powers, but his strength has earned him the nom de guerre \"Prince of Assassins\""
   pic:
     url: "assets/images/sting/bios/darren.png"
     width:  598
     height: 598
-- name: "Sara Booth"
-  bio: "BIO TEXT"
+- name: "Sarah Booth"
+  bio: "Max's sister. Initially unable to see the Harvester menace in front of her. With special spirit glasses, her whole world has changed. She also has a soft spot for cute guys."
   pic:
     url: "assets/images/sting/bios/sarah_booth.png"
     width:  646
     height: 646
 - name: "Human Specialist"
-  bio: "BIO TEXT"
+  bio: "Guardian who specializes in human research and human studies. Very humans enter the Guardian realm so he is usually very curious. He is especially interested Max, who seems to have a hidden potential."
   pic:
     url: "assets/images/sting/bios/human_specialist.png"
     width:  655
     height: 655
 - name: "Dr. Clerval"
+  bio: "Guardian who specializes in human research and human studies. He is more focused on experimentation and doesn't see the worth of individual humans. He is solely focused on the advancement of Guardian science and technology, sometimes to deleterious ends."
   pic:
     url: "assets/images/sting/bios/dr_clerval.png"
     width:  774
     height: 774
 - name: "Blair"
-  bio: "BIO TEXT"
+  bio: "Leader of Darren's Assasination Squad. He is particularly skilled in the Pistol-Arts."
   pic:
     url: "assets/images/sting/bios/blair.png"
     width:  674
     height: 674
 - name: "The Assassination Squad"
-  bio: "BIO TEXT"
+  bio: "Darren's personal team called in when the number of enemies is large or when their particular skills are needed. They are some best Guardians in the realm."
   pic:
     url: "assets/images/sting/bios/assassination_squad.png"
     width:  768
     height: 768
 comic_pages:
-  #Comics separated by chapter
   asset_folder: "assets/images/sting"
+  pages:
   - title: "Chapter 0"
     description: Introduction
     folder: "Chapter_0"
